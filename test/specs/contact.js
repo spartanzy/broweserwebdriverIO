@@ -1,3 +1,4 @@
+import allure from "@wdio/allure-reporter"
 import contactPage from "../pages/contact-page";
 import { faker } from '@faker-js/faker';
 
@@ -10,7 +11,8 @@ after (()=>{
 })
 describe('Contact form', () => {
     it('Submit form and assert success message', async () => {
-        
+        allure.addSeverity("Critical");
+        allure.addDescription("Assert Form submit successfully")
         await contactPage.open();
 
 
