@@ -1,7 +1,10 @@
+import allure from "@wdio/allure-reporter";
 import HomePage from '../pages/home-page';
 describe('Navigation Menu', () => {
     it('get text from all menu and assert', async() => {
         
+        allure.addSeverity("critical");
+        allure.addStep("asserting Menu links")
         const expectedList = ['Home','About','Shop','Blog','Contact','My account'];
         await browser.url('/');
 
