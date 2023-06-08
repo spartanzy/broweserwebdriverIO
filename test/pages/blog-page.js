@@ -11,3 +11,5 @@ class BlogPage{
 
 }
 export default new BlogPage();
+//another way to export in older version of ES
+// module.exports = new BlogPage();  

@@ -1,4 +1,4 @@
-import allure from "@wdio/allure-reporter"
+import allure from "@wdio/allure-reporter";
 import contactPage from "../pages/contact-page";
 import { faker } from '@faker-js/faker';
 
