@@ -42,7 +42,7 @@ describe('Home',()=>{
     })
 
     it('Verifying text in homepage',async()=>{
-
+        
       //  await HomePage.open();      
         const text = await HomePage.Textfield.getText();
         console.log(text);
