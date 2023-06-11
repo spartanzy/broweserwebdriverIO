@@ -65,14 +65,17 @@ exports.config = {
         maxInstances: 6,
         //
         browserName: 'chrome',
-        acceptInsecureCerts: true
+        acceptInsecureCerts: true,
+        'goog:chromeOptions': {
+			args : [ "--ignore-certificate-errors", "--disable-popup-blocking", "--disable-default-apps", "--disable-extensions-file-access-check", "--headless", "--disable-gpu", "--disable-dev-shm-usage"]
+		}
         // If outputDir is provided WebdriverIO can capture driver session logs
         // it is possible to configure which logTypes to include/exclude.
         // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
         // excludeDriverLogs: ['bugreport', 'server'],
-    },{
-        browserName: 'MicrosoftEdge'
-    }],
+    // },{
+    //     browserName: 'MicrosoftEdge'
+     }],
     //
     // ===================
     // Test Configurations
